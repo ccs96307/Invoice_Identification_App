@@ -34,7 +34,7 @@ public class MainActivity extends Activity {
     private List<Account> list; // data list
     private AccountDao dao; // the class of increase or decrease action
     private EditText datetimeET; // enter datetime edit text
-    private EditText infoET; // enter infomation edit text
+    private EditText infoET; // enter information edit text
     private EditText valueET; // enter value edit text
     private MyAdapter adapter;
     private ListView accountLV; // ListView
@@ -214,7 +214,8 @@ public class MainActivity extends Activity {
             downTV.setOnClickListener(new View.OnClickListener()
             {
                 @Override
-                public void onClick(View v) {
+                public void onClick(View v)
+                {
                     a.setValue(a.getValue()-1);
                     notifyDataSetChanged();
                     dao.update(a);
